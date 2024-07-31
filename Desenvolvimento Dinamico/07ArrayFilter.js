@@ -18,14 +18,14 @@ var numerosPares = numeros.filter(buscarNumerosPares);//neste caso a função po
 console.log("\nFiltrando utilizando functions -->",numerosPares);
 
 //utilizando filter em objetos
-var funcionario = [
+var funcionarios = [
     {nome: "Luiz", idade: 62},
     {nome: "Bernardo", idade:27},
     {nome: "Arthur", idade:32},
     {nome: "Lucas", idade:45}
 ];
 
-var pessoasListagem = funcionario.filter(
+var pessoasListagem = funcionarios.filter(
     function(valor){
         return valor.nome.length <5;
         //console.log(valor.nome);
