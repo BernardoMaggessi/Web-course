@@ -1,21 +1,28 @@
 body{
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 2.2em;/*EM = medida relativa ao tamanho da fonte*/
     color:rgb(125, 116, 113);
+    margin:0; /**remove margens de todos os elementos no escopo de body*/
 }
+
+header{
+    background-color:#f4511e;
+}
+section, footer{
+    margin: 20px;
+}
+
 h1{
     font-size: 63px;
-    color:rgb(91, 91, 240);
+    padding:16px;
+    color: white;
+    text-align: center;
 }
 h2{
     font-size: 24px;
     text-transform: uppercase;
     color: #303030;
     font-weight: 600px;
-}
-li{
-    color:rgb(113, 9, 113);
-    margin:15px;
 }
