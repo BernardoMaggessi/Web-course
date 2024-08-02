@@ -26,3 +26,24 @@ h2{
     color: #303030;
     font-weight: 600px;
 }
+/*Estilizando Menus*/
+nav li a{/**estiliza links que se encontram dentro de lista*/
+    padding: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav li{/*estliza itens da lista*/
+    float: left;
+}
+nav ul{/*estilização da lista por completo*/
+    float: right;
+    list-style: none;
+}
+nav{
+    font-size: 12px;
+    letter-spacing: 3px;
+    height: 50px;
+    background-color: #f03b3b;
+    padding-right: 40px;
+}
+/*Fim de Estilizando Menus*/
