@@ -68,4 +68,13 @@ table tr:nth-child(even){
 
 table tr:nth-child(odd){
     background-color: #bdbdbd;
+} 
+
+/*DIVs, Class e ID*/
+#pacotes .figuras figure {
+    display: inline-block;
+}
+
+#pacotes .figuras, #pacotes .videos{
+    text-align: center;
 }
