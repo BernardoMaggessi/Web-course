@@ -19,7 +19,7 @@
         <h1>Agende sua viagens dos sonhos!</h1>
     </header>
 
-    <section>
+    <section id="pacotes">
         <h2>Conheça nossos pacotes</h2>
         <p>
            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolore eaque quo, tempore ut molestias harum expedita voluptas consequuntur,
@@ -28,39 +28,39 @@
             <a href="https://br.lipsum.com/feed/html">link direto para Lorem ipsum</a>
             <hr>
         </p>
-        
         <!--AQUI COMEÇA INSERÇÃO DE IMAGENS-->
-        <figure>
-            <img src="img/Nossos-pacotes/Chale-dos-Platanos-370x247-2041974544.jpg" alt="chalé dos platanos" width="370" height="247">
-            <figcaption>Chalé dos platanos</figcaption>
-        </figure>
-        
-        <figure>
-            <img src="img/Nossos-pacotes/o-que-fazer-em-porto-seguro-viagem-768x449-3166503111.jpg" alt="Praia em porto seguro" width="370" height="247">
-            <figcaption>Porto Seguro</figcaption>
-        </figure>
-        
-        <figure>
-            <img src="img/Nossos-pacotes/soho-nova-york-dica-fernanda-motta-1218135349.jpg" alt="imagem de rua em nova york" width="370" height="247">
-            <figcaption>Nova york</figcaption>
-        </figure>
+        <div class="figuras">
+            <figure>
+                <img src="img/Nossos-pacotes/Chale-dos-Platanos-370x247-2041974544.jpg" alt="chalé dos platanos" >
+                <figcaption>Chalé dos platanos</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/Nossos-pacotes/o-que-fazer-em-porto-seguro-viagem-768x449-3166503111.jpg" alt="Praia em porto seguro" width="370" height="247">
+                <figcaption>Porto Seguro</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/Nossos-pacotes/soho-nova-york-dica-fernanda-motta-1218135349.jpg" alt="imagem de rua em nova york" width="370" height="247">
+                <figcaption>Nova york</figcaption>
+            </figure>
+        </div>
         <!--AQUI ACABA INSERÇÃO DE IMAGENS-->
+        <!--inserção de vídeos-->
+        <div class="videos">
+            <video controls width="600px">
+                <source src="img/vid/ERRO NO PEDIDO DE INTERNAÇÃO.mp4" type="video/mp4">
+                Seu navegador não suporta videos mp4 -- <a href="img/vid/ERRO NO PEDIDO DE INTERNAÇÃO.mp4">baixe aqui</a>
+            </video>    
+            <br>
+        </div>
+        <!--fim de inserção de vídeos-->
     </section>
-    
-    <!--inserção de vídeos-->
-    <video controls width="600px">
-        <source src="img/vid/ERRO NO PEDIDO DE INTERNAÇÃO.mp4" type="video/mp4">
-        Seu navegador não suporta videos mp4 -- <a href="img/vid/ERRO NO PEDIDO DE INTERNAÇÃO.mp4">baixe aqui</a>
-    </video>    
-    <!--fim de inserção de vídeos-->
-    <br>
-    
+
     <section>
         <h2>Taxas e serviços</h2>
-        <p>veja nossas taxas para serviços</p>
         <!--INÍCIO DA TABELA-->
         <table border>
-            <caption>Descrição dos serviços e respectivos valores</caption>
             <thead>
                 <tr>
                     <th>Serviço</th>
@@ -81,12 +81,14 @@
                     <td>R$50,00</td>
                 </tr>
             </tbody>
+            <caption>Descrição dos serviços e respectivos valores</caption>
         </table>
+
         <!--FIM FA TABELA-->
     </section>
     <!--FORMULÁRIOS-->
     <section>
-        <h2>Orcamento</h2>
+        <h2>Orçamento</h2>
         <form method="GET" action="">
             
             <fieldset>
@@ -95,7 +97,7 @@
                 <input type="text" name="nome"><br><br>
     
                 <label >Email</label><br>
-                <input required type="text"  name="email"><br><br>
+                <input required type="text" name="email"><br><br>
     
                 <label>Data de ida</label><br>
                 <input type="date" name="dataIda"><br><br>

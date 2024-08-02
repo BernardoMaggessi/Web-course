@@ -47,3 +47,34 @@ nav{
     padding-right: 40px;
 }
 /*Fim de Estilizando Menus*/
+
+/*Estilizando tabelas utilizando pseudo classes*/
+table{
+    width: 60%;/*largura*/
+}
+table td{
+    color: #303030;
+    padding: 5px;
+}
+table thead th{
+    background-color: #ff7d7d;
+    color: #303030
+}
+
+/*PSEUDO CLASSES*/
+table tr:nth-child(even){
+    background-color: #e9e9e9;
+}
+
+table tr:nth-child(odd){
+    background-color: #bdbdbd;
+} 
+
+/*DIVs, Class e ID*/
+#pacotes .figuras figure {
+    display: inline-block;
+}
+
+#pacotes .figuras, #pacotes .videos{
+    text-align: center;
+}
