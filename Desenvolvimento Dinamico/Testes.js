@@ -1,15 +1,6 @@
-const numeros = [2, 4, 6, 8, 10];
+let rlSync = require("readline-sync");
+let pedido = rlSync.question('Qual seu pedido?')
 
-let soma = 0;
+console.log(pedido)
 
-for (let i = 0; i < numeros.length; i++) {
-
-  if (numeros[i] % 2 === 0) {
-
-    soma += numeros[i];
-
-  }
-
-}
-
-console.log(soma);
+//let item, valor;
