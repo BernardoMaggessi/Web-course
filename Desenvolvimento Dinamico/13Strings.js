@@ -43,3 +43,18 @@ console.log(frase.trim());
 var num = "1,2,3,4,5,6,7,8"
 var arr = num.split(",");
 console.log(arr[4]);
+
+//praticando um pouco de metodos em Strings
+var s = "JavaScript e Python"
+var pos1 = s.indexOf("Python");
+var novaString = s.substring(13,s.length);
+console.log(pos1);
+console.log(novaString)
+
+var frase = "Olá mundo";
+
+if(frase.startsWith("Olá")){
+    var novaFrase = frase.replace("mundo","pessoal").toLocaleUpperCase();
+    console.log(novaFrase);
+}
+
