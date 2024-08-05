@@ -43,7 +43,7 @@ nav{
     font-size: 12px;
     letter-spacing: 3px;
     height: 50px;
-    background-color: #f03b3b;
+    background-color:#f4511e;
     padding-right: 40px;
 }
 /*Fim de Estilizando Menus*/
@@ -57,7 +57,7 @@ table td{
     padding: 5px;
 }
 table thead th{
-    background-color: #ff7d7d;
+    background-color: #c55757;
     color: #303030
 }
 
@@ -70,11 +70,3 @@ table tr:nth-child(odd){
     background-color: #bdbdbd;
 } 
 
-/*DIVs, Class e ID*/
-#pacotes .figuras figure {
-    display: inline-block;
-}
-
-#pacotes .figuras, #pacotes .videos{
-    text-align: center;
-}
