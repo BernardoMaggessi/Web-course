@@ -6,21 +6,45 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagens dos sonhos</title>
+    <title>Viagem dos sonhos</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul><!--lista não ordenada-->
-                <li><a href="reserva.html">Pacotes</a></li>
-                <li><a href="reserva.html">Taxas</a></li>
-                <li><a href="reserva.html">Contato</a></li>
-            </ul>
-        </nav>
-        <h1>Agende sua viagens dos sonhos!</h1>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <!--NAV COM BOOTSTRAP-->
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem dos sonhos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contato
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--fim do NAV com bootstrap-->
+            <h1>Agende sua viagens dos sonhos!</h1>
     </header>
 
-    <section id="pacotes">
+    <section class="container-fluid bg-light text-center">
         <h2>Conheça nossos pacotes</h2>
         <p>
            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolore eaque quo, tempore ut molestias harum expedita voluptas consequuntur,
@@ -49,8 +73,8 @@
         <!--AQUI ACABA INSERÇÃO DE IMAGENS-->
     </section>
 
-    <section>
-        <h2>Taxas e serviços</h2>
+    <section class="container-fluid bg-warning ">
+        <h2>Taxas de serviços</h2>
         <!--INÍCIO DA TABELA-->
         <table border>
             <thead>
@@ -79,12 +103,12 @@
         <!--FIM FA TABELA-->
     </section>
     <!--FORMULÁRIOS-->
-    <section>
-        <h2>Orçamento</h2>
+    <section class="container-fluid bg-light">
+        <h2>Contato</h2>
         <form method="GET" action="">
             
             <fieldset>
-                <legend>Dados da viagem</legend>
+                <legend>Dados Pessoais</legend>
                 <label for="">Nome</label><br>
                 <input type="text" name="nome"><br><br>
     
@@ -154,8 +178,8 @@
     
   
     <hr>
-    <footer><!--RODAPÉ-->
-        <p>Desenvolvido por Bernardo Maggessi Garcêz</p>
+    <footer class="container-fluid bg-warning"><!--RODAPÉ-->
+         <p>Desenvolvido por Bernardo Maggessi Garcêz</p>
     </footer>
      <!--CONTEUDO js DO BOOTSTRAP, de prefrencia colocar no fim da página para não dificultar carregamento da mesma-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
