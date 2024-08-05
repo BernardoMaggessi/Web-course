@@ -14,3 +14,9 @@ for(let i = 0; i<valores.length;i++){
         console.log(valores[i])
     }  
 }
+console.log("\nEXERCICIO: # mapear array e transformar elementos em Maiusculo\n");
+//Exercicio
+let nomes = ["João", "Maria","Pedro","Guilherme"];
+
+let nomesMaiusculos = nomes.map(nome => nome.toUpperCase());
+console.log(nomesMaiusculos);
