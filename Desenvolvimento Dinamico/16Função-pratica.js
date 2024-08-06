@@ -12,7 +12,7 @@ function removeItemFromCart(item){
     }
 }
 function viewCart(){
-    if(shoppingCart != 0){//veirifca se tem itens
+    if(shoppingCart != 0){//veirifca se tem itens   
         console.log("Itens no carrinho");
         for(let i = 0;i<shoppingCart.length;i++){
             console.log(`${i+1} - ${shoppingCart[i]}`)
