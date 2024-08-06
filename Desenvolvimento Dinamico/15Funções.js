@@ -21,7 +21,7 @@ const mensagem = (nome) =>{
     console.log(`Olá, ${nome}!`);
 };
 mensagem("Bernardo");
-console.log("    PARTE 2             ")
+console.log("*-*-*-*-*-*-*-*-*- PARTE 2 -*-*-*-*-*-*-*-*-*-*-*-*")
 function multiplicar(x,y){
     return x*y
 }
