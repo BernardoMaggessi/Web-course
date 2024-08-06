@@ -77,6 +77,7 @@
         <h2>Taxas de serviços</h2>
         <!--INÍCIO DA TABELA-->
         <table border>
+            <caption>Descrição dos valores e serviços</caption>
             <thead>
                 <tr>
                     <th>Serviço</th>
@@ -97,80 +98,66 @@
                     <td>R$50,00</td>
                 </tr>
             </tbody>
-            <caption>Descrição dos serviços e respectivos valores</caption>
         </table>
+    </section><br>
 
-        <!--FIM FA TABELA-->
-    </section>
-    <!--FORMULÁRIOS-->
     <section class="container-fluid bg-light">
-        <h2>Contato</h2>
+        <h2 class="text-center">Faça já seu orçamento!</h2>
         <form method="GET" action="">
-            
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="">Nome</label><br>
-                <input type="text" name="nome"><br><br>
-    
-                <label >Email</label><br>
-                <input required type="text" name="email"><br><br>
-    
-                <label>Data de ida</label><br>
-                <input type="date" name="dataIda"><br><br>
-    
-                <label>Data de volta</label><br>
-                <input type="date" name="dataVolta"><br><br>
-    
-                <label>Quantidade de pessoas</label><br>
-                <input type="number" name="qtdPessoas"><br><br>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">
+                        Nome:
+                    </label>
+                    <input type="text" class="form-control" name="nome" id="nome"><br>
+                <div class="mb-3"> 
+                    <label class="form-label" for="email">
+                        Email:
+                    </label><br>
+                    <input required type="text" name="email" id="email" placeholder="email@xyz.com.br"><br>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataIda">
+                        Data de ida
+                    </label>
+                    <input type="date" name="dataIda" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataVolta">
+                        Data de volta
+                    </label>
+                    <input type="date" name="dataVolta" class="form-control">
+                </div>
             </fieldset>
             <!--FIELDSET COM FORM DE CHECKBOX-->
-            
             <fieldset>
-                <legend>Quais serviços deseja contratar?</legend>
-            
-                <label><br>
-                    <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
-                </label>
-                <label>
-                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
-                </label>
-                <label>
-                    <br><input type="checkbox" name="veiculos" id="veiculo">Reserva de veiculos
-                </label>
+                <legend>Qual(ais) serviço(s) deseja contratar?</legend>
+                <div class="form-check">
+                    <input type="checkbox" name="passagens" class="form-check-input" value="Passagens" id="compraPassagens">
+                    <label class="form-check-label" for="compraPassagens">
+                        Compra de passagens
+                    </label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="hospedagem" class="form-check-input" value="Hospedagem" id="reservaHospedagem">  
+                    <label class="form-check-label" for="reservaHospedagem">
+                        Reserva de hospedagem
+                    </label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="veiculo" class="form-check-input" value="aluguel de veiculos" id="alugelVeiculo">  
+                    <label class="form-check-label" for="aluguelVeiculo">
+                        Aluguel de veiculos
+                    </label>
+                </div>
+
             </fieldset>
-            <!--FIM DE FIELDSET COM FORM DE CHECKBOX-->
+            
             <br>
-            <!--RADIOGROUP-->
-            <fieldset>
-                <legend>Método de pagamento</legend>
-                <label>
-                    <br><input type="radio" name="formaPagameto" value="Credito">Cartão de Crédito
-                </label>
-                <label>
-                    <br><input type="radio" name="formaPagameto" value="Debito">Cartão de Débito
-                </label>
-                <label>  
-                    <br><input type="radio" name="formaPagameto" value="Pix">Pix
-                </label>
-            </fieldset>
-            <!--FIM DO RADIOGROUP-->
-            <br>
-            <!--LISTA SUSPENSA-->
-            <fieldset>
-                <legend>Escolha o prazo para pagamento</legend>
-                <select name="prazoPagamento">
-                    <option value="aVista" selected>À VISTA</option>
-                    <option value="5x">5x sem juros</option>
-                    <option value="10x">10x com juros</option>
-                </select>
-            </fieldset>
-            <!--fim da lista suspensa-->
-            
-            <br><label for>Comentário</label><br>
-            <textarea rows="5" name="cometario"></textarea><br><br>
-            
-            <button>Salvar</button>
+            <button class="btn btn-secondary">Salvar</button>
         </form>
     </section>
     
