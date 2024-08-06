@@ -31,3 +31,33 @@ const p2=criarPessoa("Matheus","Oliveira",34);
 console.log(p1);
 console.log(p2.nome);
 console.log(p2.nomeCompleto);
+
+//Exercício de IMC
+
+function criarFuncionario(nome, sobrenome, altura, peso){
+    return{
+        nome,
+        sobrenome,
+        altura,
+        peso,
+        get calculaIMC(){
+            let resultado = peso/(altura*altura).toFixed(2);
+            
+            if(resultado <18.5){
+                console.log(`${resultado}`," --> IMC abaixo do recomendado")
+            }else if(resultado >= 18.5 && resultado <= 24.9){
+                console.log(`${resultado}`," --> peso normal")
+            }else if(resultado >= 25 && resultado <= 29.9){
+                console.log(`${resultado}`," --> sobrepeso")
+            }else if(resultado >= 30 && resultado <= 34.9){
+                console.log(`${resultado}`," --> obesidade nivel 1")
+            }else if(resultado >= 35 && resultado <= 39.9){
+                console.log(`${resultado}`," --> obesidade nivel 2")
+            }else{
+                console.log(`${resultado}`," --> obesidade nivel 3")
+            }
+        }
+    }
+}
+const p3 = criarFuncionario("Bernardo","Maggessi",1.80,60);
+p3.calculaIMC
