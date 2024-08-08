@@ -97,7 +97,7 @@
                   <h5 class="card-title">Chale dos Platanos</h5>
                   <h1 class="card-subtitle text-muted" >R$ 5.000,00</h1>
                   <p class="card-text">Conheça o chalé dos Plantanos</p>
-                  <a href="#" class="btn btn-primary">reservar</a> 
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reservar</a> 
                 </div>
                 <div class="card-footer">
                     <small>Em até 10x sem juros</small>
@@ -111,7 +111,7 @@
                   <h5 class="card-title">Porto seguro</h5>
                   <h1 class="card-subtitle text-muted" >R$ 7.500,00</h1>
                   <p class="card-text">Conheça Porto Seguro</p>
-                  <a href="#" class="btn btn-primary">reservar</a> 
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reservar</a> 
                 </div>
                 <div class="card-footer">
                     <small>Em até 10x sem juros</small>
@@ -125,7 +125,7 @@
                   <h5 class="card-title">Nova york</h5>
                   <h1 class="card-subtitle text-muted" >$ 20.500,00</h1>
                   <p class="card-text">Conheça  Nova York</p>
-                  <a href="#" class="btn btn-primary">reservar</a> 
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reservar</a> 
                 </div>
                 <div class="card-footer">
                     <small>Em até 10x sem juros</small>
@@ -234,4 +234,25 @@
      <!--CONTEUDO js DO BOOTSTRAP, de prefrencia colocar no fim da página para não dificultar carregamento da mesma-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+<!--MODAL DA PÁGINA-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="exampleModalLabel">Suas compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Produto adicionado no carrinho!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar compra</button>
+        <button type="button" class="btn btn-success">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </html> 
