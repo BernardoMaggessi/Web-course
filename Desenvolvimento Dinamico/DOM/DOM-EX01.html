@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - exercício</title>
+</head>
+<body>
+    <div class="estilo">
+        div com estilo
+    </div>
+    
+    <div class="estilo">
+        div com estilo 2
+    </div>
+    <p class="estilo">paragrafo com estilo</p>
+    <p>Isso é <span class="estilo"> um elemento span</span> dentro de um ESTILO</p>
+    
+</body>
+<script>
+    const listaEstilo = document.querySelectorAll(".estilo")
+    for(i = 0;i<listaEstilo.length;i++){
+        listaEstilo[i].style.backgroundColor = "blue"
+        listaEstilo[i].style.color = "white"
+        listaEstilo[i].innerText = listaEstilo[i].innerText.toUpperCase()
+    }
+</script>
+</html>
