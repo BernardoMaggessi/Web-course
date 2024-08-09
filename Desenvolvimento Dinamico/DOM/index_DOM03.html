@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo DOM 3</title>
+</head>
+<body>
+    <h1>Usando seletor do DOM</h1>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Javascript</li>
+    </ul>
+    
+    <div id = "conteudo" name="divconteudo" class="mensagem">
+        mensagem importante para todos os usuários
+    </div>
+
+    <div name="divconteudo" class="mensagem">
+
+    </div>
+
+    <span id="novospan" class="novo">
+        TEXTO DO SPAN
+    </span>
+
+    <div class="mensagem">
+
+    </div>
+</body>
+
+<script>
+    elemento0 = document.getElementsByTagName('li')[0]
+    elemento0.style.color = 'blue';
+
+    elemento1 = document.getElementsByTagName('li')[1]
+    elemento1.style.background = 'red'
+    
+    elemento2 = document.getElementsByTagName('li')[2]
+    elemento2.innerText = "Spring Boot"
+
+    elementoDiv = document.getElementById("conteudo")
+    elementoDiv.innerHTML = "<P> ADICIONANDO PARAGRAFO DENTRO DA DIV UTILIZANDO JS "
+
+    elementoDivName = document.getElementsByName("divconteudo")[1]
+    elementoDivName.style.color = 'blue'
+    elementoDivName.innerText = "estou colocando um texto aqui dentro"
+
+    elementoClassName = document.getElementsByClassName('mensagem')[1]
+    elementoClassName.innerText = "adiciona mensagem nessa classe"
+
+    elementoSpanClass = document.querySelector("span.novo")//eleneto e classe no query
+    elementoSpanClass.style.color = 'blue'
+
+    elementoSeletor = document.querySelectorAll(".mensagem")[2]
+    elementoSeletor.innerHTML = "<p>Texto incluído utilizando o querySelector</p>"
+    
+</script>
+
+</html>

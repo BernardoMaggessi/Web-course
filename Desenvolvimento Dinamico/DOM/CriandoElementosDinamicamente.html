@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Elementos Dinamicamente</title>
+</head>
+<body>
+    
+    <ul id="lista">
+        <li>produtos</li>
+    </ul>
+</body>
+<script>
+    var elemento = document.createElement("div");
+    
+    elemento.innerText = "Incluíndo texto na div utilizando JS";
+    elemento.style.backgroundColor = "lightgreen";
+    document.body.append(elemento);
+    
+    //elementos da lista (adicionando filhos a uma tag pai)
+    var lista = document.getElementById("lista")
+    var li = document.createElement("li")
+    li.textContent = "Quem somos"
+    lista.appendChild(li);
+</script>
+</html>
