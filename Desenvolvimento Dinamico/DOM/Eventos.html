@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - DOM 06</title>
+</head>
+<body>
+    <!--A interação do html com javacript é tratado por meio de eventos que ocorrem quando o usuário ou o navegador manipula a página-->
+    <p>Clique no botão a seguir e veja o resultado</p>
+
+    <form action="">
+        <input type="button" onclick="exemploEvento()" value="Apresentar">
+    </form>
+
+    <h1 id="exemplo" onmouseover="passarMousePorCima()" onmouseout="TirarMouse()">Passar mouse em cima do testo </h1>
+</body>
+<script>
+    function exemploEvento(){
+        alert("mostrando alert")
+    }
+
+    function passarMousePorCima(){
+        document.getElementById("exemplo").innerHTML = "Evento com mouse over"
+    }
+    function TirarMouse(){
+        document.getElementById("exemplo").innerHTML = "Evento com mouse out"
+    }
+
+</script>
+</html>
