@@ -8,8 +8,15 @@
 <body>
     
     <ul id="lista">
-        <li>produtos</li>
+        <li>Produtos</li>
     </ul>
+
+    <hr>
+
+    <ul class="listaTime">
+
+    </ul>
+
 </body>
 <script>
     var elemento = document.createElement("div");
@@ -23,5 +30,18 @@
     var li = document.createElement("li")
     li.textContent = "Quem somos"
     lista.appendChild(li);
+
+    
+    const times = ["Flamengo","Botafogo","Vasco","Fluminense"];
+    let timesLista = document.querySelector('ul.listaTime')
+
+    for(var i=0;i < times.length;i++){
+        var time = times[i];
+        var listItem = document.createElement('li');
+        listItem.innerText = time;
+        listItem.style.border = '1px solid blue'
+        timesLista.appendChild(listItem)
+    }
+    
 </script>
 </html>
