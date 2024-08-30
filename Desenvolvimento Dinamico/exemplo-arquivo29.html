@@ -13,37 +13,37 @@
     
 </body>
 <script>
-    fetch('https://fakestoreapi.com/products?limit=4')
-    .then(response => response.json())
+    fetch('https://fakestoreapi.com/products?limit=4')//puxa link da API
+    .then(response => response.json())//Se tudo deu certo, irá criar a response
     .then(data => {
         preencherCarrinho(data)
-    })
+    })//processa os dados da JSON
     .catch(error =>{
         console.log("Ocorreu um error: ",error)
-    })
+    })//TRATA O ERRO
 
     function preencherCarrinho(produtos){
-        const carrinhoContainer = document.getElementById('carrinho-container');
+        const carrinhoContainer = document.getElementById('carrinho-container'); //pega elementos com esse ID
 
         produtos.forEach(produto =>{
             const divProduto = document.createElement('div')
             divProduto.classList.add('produto')//adiciona classes para essas divs que serão criadas dinamicamente
             
-            const imagem = document.createElement('img')
-            imagem.src = produto.image;
-            imagem.width = 200;
-            imagem.height = 300;
-            divProduto.appendChild(imagem);
+            const imagem = document.createElement('img') //CRIA ELEMENTO
+            imagem.src = produto.image;//CAMINHO DA IMAGEM NA API
+            imagem.width = 200;//DEFINE TAMANHO
+            imagem.height = 300;//DDEFINE ALTURA
+            divProduto.appendChild(imagem); //COLOCA ESSE ELEMENTO FILHO DENTRO DA DIV CRIADA ANTERIORMENTE
             
-            const nome = document.createElement('p');
-            nome.textContent = produto.title;
-            divProduto.appendChild(nome);
+            const nome = document.createElement('p');//cria elemento
+            nome.textContent = produto.title;//conteudo do texto e caminho na API
+            divProduto.appendChild(nome);//coloca esse elemento filho dentro da DIV criada dinamicamente
 
             const preco = document.createElement('p')
             preco.textContent = `R$ ${produto.price}`;
             divProduto.append(preco)
 
-            carrinhoContainer.appendChild(divProduto)
+            carrinhoContainer.appendChild(divProduto)//coloca a div dentro do elemento com essa ID
         })
     }
 </script>
